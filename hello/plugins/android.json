@@ -1,0 +1,42 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"HelloWorld\"><param name=\"android-package\" value=\"com.synconset.HelloWorld\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:label=\"@string/multi_app_name\" android:name=\"com.synconset.HelloWorldActivity\" android:theme=\"@android:style/Theme.Holo.Light\"></activity>",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.synconset.HelloWorld": {
+            "PACKAGE_NAME": "com.example.helloapp"
+        }
+    },
+    "dependent_plugins": {}
+}

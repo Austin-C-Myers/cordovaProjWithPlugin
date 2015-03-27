@@ -1,0 +1,20 @@
+{
+    "com.example.hello": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Austin\\Desktop\\hello-plugin"
+        }
+    },
+    "com.synconset.imagepicker": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Austin\\Desktop\\cordova-helloWorld"
+        }
+    },
+    "com.synconset.HelloWorld": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\Austin\\Desktop\\cordova-helloWorld"
+        }
+    }
+}
